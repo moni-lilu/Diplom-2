@@ -3,7 +3,7 @@ package praktikum.diplom;
 
 public class Order {
     private Ingredient[] ingredients;
-    private String _id;
+    private String id;
     private Owner owner;
     private String status;
     private String name;
@@ -13,7 +13,7 @@ public class Order {
     private int price;
 
     public Order(Ingredient[] ingredients,
-                 String _id,
+                 String id,
                  Owner owner,
                  String status,
                  String name,
@@ -22,7 +22,7 @@ public class Order {
                  int number,
                  int price) {
         this.ingredients = ingredients;
-        this._id = _id;
+        this.id = id;
         this.owner = owner;
         this.status = status;
         this.name = name;
@@ -42,12 +42,12 @@ public class Order {
         this.ingredients = ingredients;
     }
 
-    public String get_id() {
-        return _id;
+    public String getId() {
+        return id;
     }
 
-    public void set_id(String _id) {
-        this._id = _id;
+    public void setId(String id) {
+        this.id = id;
     }
 
     public Owner getOwner() {
